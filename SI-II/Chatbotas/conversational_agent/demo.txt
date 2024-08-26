@@ -1,0 +1,85 @@
+>> Hi!
+explicação: enquanto ele não sabe o nosso nome, ele pergunta sempre que o cumprimentamos
+
+
+>> Hello! My name is João. Tell me a joke.
+explicação: o bot interpreta e responde frase a frase
+
+
+>> Hi!
+explicação: Como ele já sabe o nosso nome, cumprimenta-nos com o nome
+
+
+>> What can you do for me?
+explicação: isto é o que o bot sabe dafaizeres
+	
+
+>> what is the capital of Portugal?
+explicação: Como a intenção do utilizador não é música, ele diz que não sabe responder-lhe
+
+
+>> how many songs did Sérgio Godinho publish?
+>> Sérgio Godinho published 5 songs.
+explicação: Como o tema tem que ver com música, ele tenta aprender com o próximo input do user
+	
+
+>> songs of Sérgio Godinho how many
+explicação: O bot aprendeu e sabe responder à pergunta mesmo que esta seja feita de forma gramaticalmente incorreta
+
+
+>> What is your opinion about the artist Rui Veloso?
+>> nevermind
+explicação: dá para ignorar qualquer iteração que o bot nos peça, por exemplo, neste caso o bot quer aprender, mas o utilizador não quero ensinar
+
+
+(opcional)
+>> I don't want to teach you
+explicação: se cancelarmos um ensinamento sem estar em learning mode, ele fica teaching_confusion
+
+
+>> find me some good music to listen to.
+explicação: o bot recomenda 3 músicas aletórias ao utilizador
+
+
+>> give me songs of Rui Veloso
+explicação: o bot recomenda 3 músicas do artista indicado ao utilizador
+
+
+>> show me some songs by Zeca Afonso
+explicação: o bot não reconhece o artista, porque não tem conhecimento dele, então pede ao utilizador que insira o nome do artista para fazer uma pesquisa mais profunda
+            e assim aprende que Zeca Afonso é um artista
+
+
+>> who is Zeca Afonso?
+explicação: Como ele aprendeu na interação anterior que Zeca Afonso é um artista, já não necessita de fazer uma pesquisa intensiva, e responde à pergunta do utlizador
+
+
+>> can you give me information about aaaaaaa?
+explicação: o bot não entende o nome do artista, faz uma pesquisa mais profunda e não encontra informação
+
+
+>> do you know the song: Chico Fininho?
+explicação: As músicas funcionam como os artistas, se ele tiver conhecimento da musica, responde com informações sobre ela, 
+            mas neste caso, como não tem, faz uma pesquisa mais a fundo. A partir deste momento o bot já reconhece esta música
+
+
+>> play the song Chico Fininho
+explicação: o bot tem conexão com o spotify e é possivel reproduzir uma música. caso encontre várias músicas com o mesmo nome, pede ao utilizador para que eccolha a música.
+            caso o utilizador insira o valor 0, o bot cancela a reproducão da música
+
+
+>> pause
+explicação: o bot faz pausa na reprodução da música
+
+
+>> continue / play
+explicação: o bot continua a reprodução de onde parou
+
+
+>> play grândola vila morena
+>> give me information about Queen
+explicação: podemos ignorar **qualquer** tipo de interação que o bot nos pede, que ele responde sempre
+
+
+>> thanks!
+explicação: agradecer ao bot pelos belos serviços prestados

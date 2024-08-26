@@ -1,0 +1,12 @@
+matplotlib
+networkx
+numpy
+scipy
+sklearn
+torch
+torchvision
+tqdm
+zincbase
+eventlet
+flask_socketio==4.3.2
+opencv-python

@@ -1,0 +1,10 @@
+requests
+pygame
+aiohttp
+async-timeout
+websockets
+yarl
+numpy
+tf_agents[reverb]
+tensorflow
+termcolor
